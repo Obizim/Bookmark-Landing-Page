@@ -1,0 +1,148 @@
+@import "./config";
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 5px;
+
+  &_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin: 15px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 200;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+
+        &:hover {
+          color: $SoftRed;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+
+    button {
+      background-color: $SoftRed;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      margin: 15px;
+      color: #fff;
+      padding: 13px 30px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.1px);
+      cursor: pointer;
+      outline: none;
+      font-size: 0.9rem;
+      font-weight: 200;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        border: 1.5px solid $SoftRed;
+        background: #fff;
+        color: $SoftRed;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	max-width: 1200px;
+	margin: 20px auto;
+	min-height: 50vh;
+
+
+    &_texts{
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            max-width: 30vw;
+            color: $GrayishBlue;
+        }
+
+        .chromeBtn{
+            background-color: $SoftBlue;
+            border: 1px solid transparent;
+            padding: 15px 30px;
+            border-radius: 5px;
+            color: #fff;
+            outline: none;
+            font-weight: 700;
+            box-shadow: 0px 5px rgba(0, 0, 0, 0.1px);
+            cursor: pointer;
+            margin: 5px;
+
+            &:hover {
+                border: 1.5px solid $SoftBlue;
+                margin: 0;
+                background: #fff;
+                color: $SoftBlue;
+                transition: 0.3s ease-in-out;
+              }
+        }
+        .firefoxBtn{
+            background-color: rgb(243, 243, 243);
+            border: 1px solid transparent;
+            padding: 15px 30px;
+            border-radius: 5px;
+            color: $GrayishBlue;
+            font-weight: 700;
+            outline: none;
+            margin: 5px;
+            box-shadow: 0px 5px rgba(0, 0, 0, 0.1px);
+            cursor: pointer;
+
+            
+            &:hover {
+                border: 1.5px solid $VeryDarkBlue;
+                margin: 0;
+                background: #fff;
+                color: $VeryDarkBlue;
+                transition: 0.3s ease-in-out;
+              }
+        }
+    }
+
+    &_img{
+        img{
+            position: relative;
+            width: 100%;
+            z-index: 2;
+        }
+        .bg{
+            position: absolute;
+            bottom: 12rem;
+            right: 0;
+            width: 30%;
+            height: 40%;
+            border-radius: 300px 0 0 300px;
+            background-color: $SoftBlue;
+        }
+    }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

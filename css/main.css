@@ -1,1 +1,190 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 5px;
+}
+
+.nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_menu ul li {
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.nav_menu ul li:hover {
+  color: #fa5757;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.nav_menu button {
+  background-color: #fa5757;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 15px;
+  color: #fff;
+  padding: 13px 30px;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+.nav_menu button:hover {
+  border: 1.5px solid #fa5757;
+  background: #fff;
+  color: #fa5757;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  min-height: 50vh;
+}
+
+.home_texts h2 {
+  font-size: 2.5rem;
+}
+
+.home_texts p {
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 30vw;
+  color: #9194a1;
+}
+
+.home_texts .chromeBtn {
+  background-color: #5368df;
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 5px;
+}
+
+.home_texts .chromeBtn:hover {
+  border: 1.5px solid #5368df;
+  margin: 0;
+  background: #fff;
+  color: #5368df;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.home_texts .firefoxBtn {
+  background-color: #f3f3f3;
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #9194a1;
+  font-weight: 700;
+  outline: none;
+  margin: 5px;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.home_texts .firefoxBtn:hover {
+  border: 1.5px solid #252b46;
+  margin: 0;
+  background: #fff;
+  color: #252b46;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.home_img img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.home_img .bg {
+  position: absolute;
+  bottom: 12rem;
+  right: 0;
+  width: 30%;
+  height: 40%;
+  border-radius: 300px 0 0 300px;
+  background-color: #5368df;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
