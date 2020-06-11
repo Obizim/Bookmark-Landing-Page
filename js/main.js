@@ -21,3 +21,13 @@ function openTab(evt, data) {
     document.getElementById(data).style.display = "flex";
     evt.currentTarget.className += " show";
 }
+
+// ACCORDION
+var accordion = document.getElementsByClassName('accordion');
+
+for(var i = 0; i < accordion.length; i++){
+    accordion[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+        this.nextElementSibling.classList.toggle('show');
+    });
+}

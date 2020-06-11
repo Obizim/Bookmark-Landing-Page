@@ -223,7 +223,7 @@ section {
         max-width: 30vw;
         color: $GrayishBlue;
       }
-      button {
+      .tabBtn {
         background-color: $SoftBlue;
         border: 1px solid transparent;
         padding: 15px 30px;
@@ -256,7 +256,7 @@ section {
     margin: 20px;
     padding: 7rem auto;
 
-    img{
+    img {
       margin-top: 20px;
     }
 
@@ -305,12 +305,81 @@ section {
   }
 }
 
-#one{
+#one {
   margin-top: 6rem;
 }
-#two{
+#two {
   margin-top: 12rem;
 }
+
+.accord{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  .acc{
+    width: 50%;
+
+    .accordion {
+      color: $VeryDarkBlue;
+      cursor: pointer;
+      padding: 2px;
+      text-align: left;
+      border-top: 1px solid $GrayishBlue;
+      border-right: none;
+      border-left: none;
+      outline: none;
+      transition: 0.4s;
+    
+      &:hover{
+        color: $SoftRed;
+      }
+    
+      &:after{
+        content: url('../images/icon-arrow.svg');
+        float: right;
+      }
+    }
+
+    .panel {
+      opacity: 0;
+      overflow: hidden;
+      transition: 0.6s ease-in-out;
+      max-height: 0;
+    
+      &.show{
+        display: block !important;
+        opacity: 1;
+        max-height: 300px;
+        transition: 0.6s ease-in-out;
+      }
+
+      p{
+        color: $GrayishBlue;
+        font-size: 15px;
+      }
+    }
+  }
+
+  button{
+    background-color: $SoftBlue;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    font-weight: 700;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.1px);
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+
+
+
 
 .attribution {
   font-size: 11px;
