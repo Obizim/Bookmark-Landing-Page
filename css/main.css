@@ -51,7 +51,7 @@ body {
   margin: 15px;
   text-transform: uppercase;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 550;
   letter-spacing: 0.5px;
   cursor: pointer;
   color: #252b46;
@@ -81,7 +81,7 @@ body {
 }
 
 .nav_menu button:hover {
-  border: 1.5px solid #fa5757;
+  border: 1px solid #fa5757;
   background: #fff;
   color: #fa5757;
   -webkit-transition: 0.3s ease-in-out;
@@ -134,8 +134,7 @@ body {
 }
 
 .home_texts .chromeBtn:hover {
-  border: 1.5px solid #5368df;
-  margin: 0;
+  border: 1px solid #5368df;
   background: #fff;
   color: #5368df;
   -webkit-transition: 0.3s ease-in-out;
@@ -157,8 +156,7 @@ body {
 }
 
 .home_texts .firefoxBtn:hover {
-  border: 1.5px solid #252b46;
-  margin: 0;
+  border: 1px solid #252b46;
   background: #fff;
   color: #252b46;
   -webkit-transition: 0.3s ease-in-out;
@@ -173,7 +171,7 @@ body {
 
 .home_img .bg {
   position: absolute;
-  bottom: 12rem;
+  bottom: 9rem;
   right: 0;
   width: 30%;
   height: 40%;
@@ -196,6 +194,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px 20px;
+  margin: 50px auto 0 auto;
 }
 
 .features h2 {
@@ -249,8 +248,8 @@ section .tab h2.show {
 }
 
 section .tabcontent {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -274,7 +273,7 @@ section .tabcontent .img img {
 
 section .tabcontent .img .bg {
   position: absolute;
-  bottom: -37rem;
+  bottom: -42rem;
   left: 0;
   width: 40%;
   height: 40%;
@@ -306,6 +305,111 @@ section .tabcontent_texts button {
           box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin: 1px;
+}
+
+.extension {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.extension_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 7rem auto;
+}
+
+.extension_card img {
+  margin-top: 20px;
+}
+
+.extension_card .texts {
+  text-align: center;
+}
+
+.extension_card .texts .h5 {
+  font-size: 1.5rem;
+  color: #252b46;
+  font-weight: 700;
+}
+
+.extension_card .texts p {
+  overflow: hidden;
+  font-size: 14px;
+  color: #9194a1;
+  margin-bottom: 30px;
+}
+
+.extension_card .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.extension_card .last .btn {
+  background-color: #5368df;
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.extension_card .last .btn:hover {
+  border: 1px solid #5368df;
+  background: #fff;
+  color: #5368df;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#one {
+  margin-top: 6rem;
+}
+
+#two {
+  margin-top: 12rem;
 }
 
 .attribution {

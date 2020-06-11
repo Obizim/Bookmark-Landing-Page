@@ -21,7 +21,7 @@
         margin: 15px;
         text-transform: uppercase;
         font-size: 0.9rem;
-        font-weight: 600;
+        font-weight: 550;
         letter-spacing: 0.5px;
         cursor: pointer;
         color: $VeryDarkBlue;
@@ -49,7 +49,7 @@
       letter-spacing: 0.5px;
 
       &:hover {
-        border: 1.5px solid $SoftRed;
+        border: 1px solid $SoftRed;
         background: #fff;
         color: $SoftRed;
         transition: 0.3s ease-in-out;
@@ -92,8 +92,7 @@
       margin: 1px;
 
       &:hover {
-        border: 1.5px solid $SoftBlue;
-        margin: 0;
+        border: 1px solid $SoftBlue;
         background: #fff;
         color: $SoftBlue;
         transition: 0.3s ease-in-out;
@@ -112,8 +111,7 @@
       margin: 1px;
 
       &:hover {
-        border: 1.5px solid $VeryDarkBlue;
-        margin: 0;
+        border: 1px solid $VeryDarkBlue;
         background: #fff;
         color: $VeryDarkBlue;
         transition: 0.3s ease-in-out;
@@ -129,7 +127,7 @@
     }
     .bg {
       position: absolute;
-      bottom: 12rem;
+      bottom: 9rem;
       right: 0;
       width: 30%;
       height: 40%;
@@ -145,6 +143,7 @@
   justify-content: center;
   align-items: center;
   padding: 5px 20px;
+  margin: 50px auto 0 auto;
 
   h2 {
     font-weight: 600;
@@ -188,7 +187,7 @@ section {
   }
 
   .tabcontent {
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -204,7 +203,7 @@ section {
       }
       .bg {
         position: absolute;
-        bottom: -37rem;
+        bottom: -42rem;
         left: 0;
         width: 40%;
         height: 40%;
@@ -238,6 +237,79 @@ section {
       }
     }
   }
+}
+
+.extension {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 7rem auto;
+
+    img{
+      margin-top: 20px;
+    }
+
+    .texts {
+      text-align: center;
+
+      .h5 {
+        font-size: 1.5rem;
+        color: $VeryDarkBlue;
+        font-weight: 700;
+      }
+      p {
+        overflow: hidden;
+        font-size: 14px;
+        color: $GrayishBlue;
+        margin-bottom: 30px;
+      }
+    }
+
+    .last {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn {
+        background-color: $SoftBlue;
+        border: 1px solid transparent;
+        padding: 15px 30px;
+        border-radius: 5px;
+        color: #fff;
+        outline: none;
+        font-weight: 700;
+        box-shadow: 0px 5px rgba(0, 0, 0, 0.1px);
+        cursor: pointer;
+        margin: 20px 0;
+
+        &:hover {
+          border: 1px solid $SoftBlue;
+          background: #fff;
+          color: $SoftBlue;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+#one{
+  margin-top: 6rem;
+}
+#two{
+  margin-top: 12rem;
 }
 
 .attribution {
