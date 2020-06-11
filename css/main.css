@@ -490,12 +490,151 @@ section .tabcontent_texts .tabBtn {
   margin-top: 20px;
 }
 
-.attribution {
-  font-size: 11px;
+.accessbg {
+  background: #5368df;
+  margin-top: 5rem;
+  padding: 50px;
+}
+
+.accessbg .access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem auto;
+}
+
+.accessbg .access h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
   text-align: center;
 }
 
-.attribution a {
-  color: #3e52a3;
+.accessbg .access p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.accessbg .access .btn {
+  margin: 20px auto;
+}
+
+.accessbg .access .btn input {
+  width: 300px;
+  height: 1rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.accessbg .access .btn button {
+  background-color: #fa5757;
+  height: 2.5rem;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 1.6rem 5px 1.6rem;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.accessbg .access .btn button:hover {
+  border: 1px solid #fa5757;
+  background: #fff;
+  color: #fa5757;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  background-color: #252b46;
+  padding: 20px;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer_texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer_texts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .footer_texts ul li {
+  color: #fff;
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+footer .footer_texts ul li:hover {
+  color: #fa5757;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .footer_icons {
+  margin: 15px;
+}
+
+footer .footer_icons i {
+  margin: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .footer_icons i:hover {
+  color: #fa5757;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+
+footer .attribution a {
+  color: #fa5757;
 }
 /*# sourceMappingURL=main.css.map */
