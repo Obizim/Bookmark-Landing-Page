@@ -1,4 +1,27 @@
+const hamburger = document.getElementById('hamburger');
+const menu = document.querySelector('.menu');
+const closeHam = document.getElementById('close');
+const menuNav =  document.querySelector('.nav_menu');
+let showMenu = false;
 
+menu.addEventListener('click', toggle);
+
+function toggle(){
+    if(!showMenu){
+        menuNav.classList.add('open');
+        hamburger.classList.add('close');
+        closeHam.classList.add('open');
+
+        showMenu = true;
+    }else{
+        menuNav.classList.remove('open');
+        hamburger.classList.remove('close');
+        closeHam.classList.remove('open');
+
+        showMenu = false;
+    }
+
+}
 
 
 

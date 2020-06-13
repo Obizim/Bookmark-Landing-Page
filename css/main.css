@@ -16,8 +16,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -86,6 +87,14 @@ body {
   color: #fa5757;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.nav .menu #hamburger {
+  display: none;
+}
+
+.nav .menu #close {
+  display: none;
 }
 
 .home {
@@ -625,6 +634,8 @@ footer .footer_icons i {
 
 footer .footer_icons i:hover {
   color: #fa5757;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 footer .attribution {
@@ -636,5 +647,59 @@ footer .attribution {
 
 footer .attribution a {
   color: #fa5757;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 40px;
+  }
+  .nav_menu {
+    display: none;
+  }
+  .nav_menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav_menu ul li {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: -400;
+    letter-spacing: 2px;
+  }
+  .nav_menu.open {
+    display: block;
+    background: rgba(37, 43, 70, 0.91);
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .nav .menu #hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav .menu #hamburger.close {
+    display: none;
+  }
+  .nav .menu #close {
+    display: none;
+  }
+  .nav .menu #close.open {
+    display: block;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
 }
 /*# sourceMappingURL=main.css.map */

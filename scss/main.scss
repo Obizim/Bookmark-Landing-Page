@@ -3,7 +3,7 @@
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 20px 5px;
 
@@ -54,6 +54,15 @@
         color: $SoftRed;
         transition: 0.3s ease-in-out;
       }
+    }
+  }
+
+  .menu{
+    #hamburger{
+      display: none;
+    }
+    #close{
+      display: none;
     }
   }
 }
@@ -482,6 +491,7 @@ footer {
 
         &:hover {
           color: $SoftRed;
+          transition: 0.3s ease-in-out;
         }
       }
     }
@@ -497,3 +507,6 @@ footer {
     color: $SoftRed;
   }
 }
+
+
+@import './responsive';
