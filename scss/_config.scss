@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 
 $SoftBlue: hsl(231, 69%, 60%);
 $SoftRed: hsl(0, 94%, 66%);
 $GrayishBlue: hsl(229, 8%, 60%);
 $VeryDarkBlue: hsl(229, 31%, 21%);
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: 'Rubik', sans-serif;
-    scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
 }

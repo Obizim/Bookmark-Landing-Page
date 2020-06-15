@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 18px;
-  font-family: 'Rubik', sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav {
@@ -535,7 +542,18 @@ section .tabcontent_texts .tabBtn {
   text-align: center;
 }
 
-.accessbg .access p {
+.accessbg .access img {
+  position: relative;
+  top: 3.5rem;
+  margin-left: 7rem;
+  opacity: 0;
+}
+
+.accessbg .access img.error {
+  opacity: 1;
+}
+
+.accessbg .access h5 {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -545,7 +563,7 @@ section .tabcontent_texts .tabBtn {
 }
 
 .accessbg .access .btn {
-  margin: 20px auto;
+  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,11 +576,27 @@ section .tabcontent_texts .tabBtn {
 .accessbg .access .btn input {
   width: 300px;
   height: 1rem;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 1px solid transparent;
   outline: none;
   padding: 10px;
   margin: 10px;
+}
+
+.accessbg .access .btn input.error {
+  border: 1.5px solid #fa5757;
+}
+
+.accessbg .access .btn p {
+  overflow: hidden;
+  color: #fff;
+  background-color: #fa5757;
+  text-align: center;
+  display: none;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  font-size: 13px;
+  font-weight: 100;
 }
 
 .accessbg .access .btn button {
@@ -570,7 +604,7 @@ section .tabcontent_texts .tabBtn {
   height: 2.5rem;
   border: none;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 5px 1.6rem 5px 1.6rem;
   cursor: pointer;
   outline: none;
@@ -689,7 +723,7 @@ footer .attribution a {
     font-size: 1rem;
     font-weight: 10;
     padding: 0 10rem;
-    margin: 0 6rem 0 0;
+    margin: 0 5rem 0 auto;
     padding: 20px;
     letter-spacing: 2px;
     border-bottom: 1px solid #9194a1;
@@ -711,12 +745,19 @@ footer .attribution a {
     background-color: transparent;
     text-transform: uppercase;
     border: 1.5px solid #fff;
+    text-align: center;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 1.5px;
-    width: 80vw;
-    margin: 30px 3rem;
+    padding: 1rem 7rem;
+    margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav_menu button:hover {
     background-color: transparent;
@@ -859,23 +900,62 @@ footer .attribution a {
   }
   .accord .acc {
     max-width: 100vw;
-    margin: auto 50px;
+    margin: auto 40px;
   }
   .accord .acc .accordion {
     font-weight: 100;
     font-size: 1rem;
+  }
+  .accessbg .access h1 {
+    font-size: 1.3em;
+  }
+  .accessbg .access img {
+    position: relative;
+    top: 2.5rem;
+    margin-left: 15rem;
+    opacity: 0;
+  }
+  .accessbg .access img.error {
+    opacity: 1;
   }
   .accessbg .access .btn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
   }
   .accessbg .access .btn input {
-    width: 350px;
+    width: 250px;
+  }
+  .accessbg .access .btn input.error {
+    border: 1.5px solid #fa5757;
+  }
+  .accessbg .access .btn p {
+    overflow: hidden;
+    color: #fff;
+    background-color: #fa5757;
+    position: relative;
+    top: -1.5rem;
+    width: 270px;
+    text-align: center;
+    display: none;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 13px;
+    font-weight: 100;
+  }
+  .accessbg .access .btn p.error {
+    display: block;
   }
   .accessbg .access .btn button {
-    width: 370px;
+    width: 275px;
   }
   footer .footer {
     -webkit-box-orient: vertical;

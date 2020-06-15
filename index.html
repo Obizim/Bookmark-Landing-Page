@@ -17,9 +17,15 @@
       <img id="logo" src="images/logo-bookmark.svg" alt="logo">
       <div class="nav_menu">
         <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
+          <a href="#features">
+            <li>Features</li>
+          </a>
+          <a href="#extension">
+            <li>Pricing</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
         </ul>
         <button>Login</button>
       </div>
@@ -46,7 +52,7 @@
     </div>
   </section>
 
-  <div class="features">
+  <div id="features" class="features">
     <h2> Features</h2>
     <p>
       Our aim is to make it quick and easy for you to access your favourite websites.
@@ -106,7 +112,7 @@
 
   </section>
 
-  <div class="features">
+  <div id="extension" class="features">
     <h2>Download the extension</h2>
     <p>
       We’ve got more browsers in the pipeline. Please do let us know if you’ve
@@ -203,13 +209,16 @@
     <button>More Info</button>
   </section>
 
-  <div class="accessbg">
+  <div id="contact" class="accessbg">
     <div class="access">
-      <p>35,000+ already joined</p>
+      <h5>35,000+ already joined</h5>
       <h1>Stay up-to-date with what <br> we’re doing</h1>
+
+      <img id="imgError" src="images/icon-error.svg" alt="error">
       <div class="btn">
         <input placeholder="Enter your email address" type="email" id="email">
-        <button>Contact Us</button>
+        <p id="error">Whoops! Make sure it's an email address</p>
+        <button id="submit">Contact Us</button>
       </div>
     </div>
   </div>
@@ -217,19 +226,19 @@
 
   <footer>
     <div class="footer">
-    <div class="footer_texts">
-      <img src="images/logo-bookmark2.svg" alt="logo">
-      <ul>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-    <div class="footer_icons">
+      <div class="footer_texts">
+        <img src="images/logo-bookmark2.svg" alt="logo">
+        <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer_icons">
 
-      <i class="fa fa-facebook-square"></i>
-      <i class="fa fa-twitter"></i>
-    </div>
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
     </div>
 
     <p class="attribution">

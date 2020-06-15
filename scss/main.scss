@@ -1,5 +1,8 @@
 @import "./config";
 
+a {
+  text-decoration: none;
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -57,11 +60,11 @@
     }
   }
 
-  .menu{
-    #hamburger{
+  .menu {
+    #hamburger {
       display: none;
     }
-    #close{
+    #close {
       display: none;
     }
   }
@@ -331,7 +334,7 @@ section {
   .acc {
     max-width: 50vw;
 
-    img{
+    img {
       float: right;
     }
 
@@ -354,7 +357,6 @@ section {
       &:after {
         content: url("../images/icon-arrow.svg");
         float: right;
-
       }
     }
 
@@ -410,7 +412,17 @@ section {
       font-weight: 100;
       text-align: center;
     }
-    p {
+    img {
+      position: relative;
+      top: 3.5rem;
+      margin-left: 7rem;
+      opacity: 0;
+
+      &.error {
+        opacity: 1;
+      }
+    }
+    h5 {
       text-align: center;
       color: #fff;
       text-transform: uppercase;
@@ -420,25 +432,40 @@ section {
     }
 
     .btn {
-      margin: 20px auto;
+      margin: 20px 0;
       display: flex;
       flex-direction: row;
 
       input {
         width: 300px;
         height: 1rem;
-        border-radius: 2px;
+        border-radius: 3px;
         border: 1px solid transparent;
         outline: none;
         padding: 10px;
         margin: 10px;
+
+        &.error {
+          border: 1.5px solid $SoftRed;
+        }
+      }
+
+      p {
+        overflow: hidden;
+        color: #fff;
+        background-color: $SoftRed;
+        text-align: center;
+        display: none;
+        transition: 1s ease-in-out;
+        font-size: 13px;
+        font-weight: 100;
       }
       button {
         background-color: $SoftRed;
         height: 2.5rem;
         border: none;
         color: #fff;
-        border-radius: 2px;
+        border-radius: 3px;
         padding: 5px 1.6rem 5px 1.6rem;
         cursor: pointer;
         outline: none;
@@ -516,5 +543,4 @@ footer {
   }
 }
 
-
-@import './responsive';
+@import "./responsive";
